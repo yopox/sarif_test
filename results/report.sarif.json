@@ -30,7 +30,7 @@
         {
           "executionSuccessful": true,
           "workingDirectory": {
-            "uri": "/Users/yopox/IdeaProjects/sarif_test/"
+            "uri": "file:///Users/yopox/IdeaProjects/sarif_test/"
           }
         }
       ],
