@@ -14,8 +14,8 @@
               "name": "Magic number"
             },
             {
-              "id": "SpellCheckingInspection",
-              "name": "Typo"
+              "id": "RedundantStringFormatCall",
+              "name": "Redundant call to 'String.format()'"
             }
           ],
           "language": "en-US",
@@ -28,6 +28,7 @@
       },
       "invocations": [
         {
+          "executionSuccessful": true,
           "workingDirectory": {
             "uri": "/Users/yopox/IdeaProjects/sarif_test/"
           }
@@ -60,23 +61,23 @@
           ]
         },
         {
-          "ruleId": "SpellCheckingInspection",
+          "ruleId": "RedundantStringFormatCall",
           "kind": "fail",
-          "level": "note",
+          "level": "warning",
           "message": {
-            "text": "Typo: In word 'codeql'"
+            "text": "Redundant call to 'printf()'"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/.github/workflows/action.yml"
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 289,
-                  "charLength": 36,
+                  "charOffset": 356,
+                  "charLength": 6,
                   "snippet": {
-                    "text": "github/codeql-action/upload-sarif@v2"
+                    "text": "printf"
                   }
                 }
               }
