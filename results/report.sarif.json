@@ -14,8 +14,16 @@
               "name": "Magic number"
             },
             {
+              "id": "unused",
+              "name": "Unused declaration"
+            },
+            {
               "id": "RedundantStringFormatCall",
               "name": "Redundant call to 'String.format()'"
+            },
+            {
+              "id": "UnusedAssignment",
+              "name": "Unused assignment"
             }
           ],
           "language": "en-US",
@@ -50,10 +58,34 @@
                   "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 499,
+                  "charOffset": 540,
                   "charLength": 2,
                   "snippet": {
                     "text": "11"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "unused",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Variable 'x' is never used"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                },
+                "contextRegion": {
+                  "charOffset": 239,
+                  "charLength": 1,
+                  "snippet": {
+                    "text": "x"
                   }
                 }
               }
@@ -74,10 +106,34 @@
                   "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 356,
+                  "charOffset": 397,
                   "charLength": 6,
                   "snippet": {
                     "text": "printf"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UnusedAssignment",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The value '2' assigned to 'x' is never used"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                },
+                "contextRegion": {
+                  "charOffset": 254,
+                  "charLength": 1,
+                  "snippet": {
+                    "text": "x"
                   }
                 }
               }
