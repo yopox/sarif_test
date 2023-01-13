@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "IntelliJ IDEA",
-          "version": "231.5148",
+          "version": "231.SNAPSHOT",
           "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2023.1",
           "rules": [
             {
@@ -14,8 +14,8 @@
               "name": "Magic number"
             },
             {
-              "id": "RedundantStringFormatCall",
-              "name": "Redundant call to 'String.format()'"
+              "id": "SpellCheckingInspection",
+              "name": "Typo"
             }
           ],
           "language": "en-US",
@@ -26,6 +26,13 @@
           "isComprehensive": false
         }
       },
+      "invocations": [
+        {
+          "workingDirectory": {
+            "uri": "/Users/yopox/IdeaProjects/sarif_test/"
+          }
+        }
+      ],
       "language": "en-US",
       "results": [
         {
@@ -33,7 +40,7 @@
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Magic number '12'"
+            "text": "Magic number '11'"
           },
           "locations": [
             {
@@ -41,11 +48,11 @@
                 "artifactLocation": {
                   "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
                 },
-                "region": {
+                "contextRegion": {
                   "charOffset": 499,
                   "charLength": 2,
                   "snippet": {
-                    "text": "12"
+                    "text": "11"
                   }
                 }
               }
@@ -53,23 +60,23 @@
           ]
         },
         {
-          "ruleId": "RedundantStringFormatCall",
+          "ruleId": "SpellCheckingInspection",
           "kind": "fail",
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "Redundant call to 'printf()'"
+            "text": "Typo: In word 'codeql'"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/.github/workflows/action.yml"
                 },
-                "region": {
-                  "charOffset": 356,
-                  "charLength": 6,
+                "contextRegion": {
+                  "charOffset": 289,
+                  "charLength": 36,
                   "snippet": {
-                    "text": "printf"
+                    "text": "github/codeql-action/upload-sarif@v2"
                   }
                 }
               }
