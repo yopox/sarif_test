@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/schemastore/schemastore/master/src/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "IntelliJ IDEA",
+          "version": "231.5148",
+          "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2023.1",
+          "rules": [
+            {
+              "id": "MagicNumber",
+              "name": "Magic number"
+            },
+            {
+              "id": "RedundantStringFormatCall",
+              "name": "Redundant call to 'String.format()'"
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "MagicNumber",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Magic number '12'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                },
+                "region": {
+                  "charOffset": 499,
+                  "charLength": 2,
+                  "snippet": {
+                    "text": "12"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RedundantStringFormatCall",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Redundant call to 'printf()'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                },
+                "region": {
+                  "charOffset": 356,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "printf"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
