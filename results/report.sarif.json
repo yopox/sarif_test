@@ -10,6 +10,10 @@
           "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2023.1",
           "rules": [
             {
+              "id": "MagicNumber",
+              "name": "Magic number"
+            },
+            {
               "id": "DeprecatedIsStillUsed",
               "name": "Deprecated member is still used"
             },
@@ -45,11 +49,39 @@
       "language": "en-US",
       "results": [
         {
+          "ruleId": "MagicNumber",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Magic number '31'"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/Main.java"
+                },
+                "contextRegion": {
+                  "startLine": 7,
+                  "startColumn": 29,
+                  "endLine": 7,
+                  "endColumn": 31,
+                  "charOffset": 343,
+                  "charLength": 2,
+                  "snippet": {
+                    "text": "31"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
           "ruleId": "DeprecatedIsStillUsed",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Deprecated member 'foo' is still used"
+            "text": "Deprecated member 'bar' is still used"
           },
           "locations": [
             {
@@ -62,10 +94,10 @@
                   "startColumn": 23,
                   "endLine": 20,
                   "endColumn": 26,
-                  "charOffset": 655,
+                  "charOffset": 656,
                   "charLength": 3,
                   "snippet": {
-                    "text": "foo"
+                    "text": "bar"
                   }
                 }
               }
@@ -77,7 +109,7 @@
           "kind": "fail",
           "level": "error",
           "message": {
-            "text": "'foo()' is deprecated and marked for removal"
+            "text": "'bar()' is deprecated and marked for removal"
           },
           "locations": [
             {
@@ -90,10 +122,10 @@
                   "startColumn": 12,
                   "endLine": 14,
                   "endColumn": 15,
-                  "charOffset": 571,
+                  "charOffset": 572,
                   "charLength": 3,
                   "snippet": {
-                    "text": "foo"
+                    "text": "bar"
                   }
                 }
               }
@@ -118,10 +150,10 @@
                   "startColumn": 23,
                   "endLine": 20,
                   "endColumn": 26,
-                  "charOffset": 655,
+                  "charOffset": 656,
                   "charLength": 3,
                   "snippet": {
-                    "text": "foo"
+                    "text": "bar"
                   }
                 }
               }
