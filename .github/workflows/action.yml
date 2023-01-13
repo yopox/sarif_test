@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Uploading SARIF
         uses: github/codeql-action/upload-sarif@v2
-        sarif-file: ../../results/report.sarif.json
+        sarif-file: '../../results/report.sarif.json'
