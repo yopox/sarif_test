@@ -58,11 +58,11 @@
                   "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "startLine": 22,
+                  "startLine": 20,
                   "startColumn": 23,
-                  "endLine": 22,
+                  "endLine": 20,
                   "endColumn": 26,
-                  "charOffset": 811,
+                  "charOffset": 655,
                   "charLength": 3,
                   "snippet": {
                     "text": "foo"
@@ -86,11 +86,11 @@
                   "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "startLine": 16,
+                  "startLine": 14,
                   "startColumn": 12,
-                  "endLine": 16,
+                  "endLine": 14,
                   "endColumn": 15,
-                  "charOffset": 727,
+                  "charOffset": 571,
                   "charLength": 3,
                   "snippet": {
                     "text": "foo"
@@ -114,11 +114,11 @@
                   "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "startLine": 22,
+                  "startLine": 20,
                   "startColumn": 23,
-                  "endLine": 22,
+                  "endLine": 20,
                   "endColumn": 26,
-                  "charOffset": 811,
+                  "charOffset": 655,
                   "charLength": 3,
                   "snippet": {
                     "text": "foo"
@@ -142,11 +142,11 @@
                   "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "startLine": 6,
+                  "startLine": 4,
                   "startColumn": 19,
-                  "endLine": 6,
+                  "endLine": 4,
                   "endColumn": 25,
-                  "charOffset": 356,
+                  "charOffset": 200,
                   "charLength": 6,
                   "snippet": {
                     "text": "printf"
