@@ -10,20 +10,20 @@
           "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=IU&utm_content=2023.1",
           "rules": [
             {
-              "id": "MagicNumber",
-              "name": "Magic number"
+              "id": "DeprecatedIsStillUsed",
+              "name": "Deprecated member is still used"
             },
             {
-              "id": "unused",
-              "name": "Unused declaration"
+              "id": "removal",
+              "name": "Usage of API marked for removal"
+            },
+            {
+              "id": "EmptyMethod",
+              "name": "Empty method"
             },
             {
               "id": "RedundantStringFormatCall",
               "name": "Redundant call to 'String.format()'"
-            },
-            {
-              "id": "UnusedAssignment",
-              "name": "Unused assignment"
             }
           ],
           "language": "en-US",
@@ -38,30 +38,30 @@
         {
           "executionSuccessful": true,
           "workingDirectory": {
-            "uri": "file:///Users/yopox/IdeaProjects/sarif_test/"
+            "uri": "file:///Users/yopox/IdeaProjects/sarif_test"
           }
         }
       ],
       "language": "en-US",
       "results": [
         {
-          "ruleId": "MagicNumber",
+          "ruleId": "DeprecatedIsStillUsed",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Magic number '11'"
+            "text": "Deprecated member 'foo' is still used"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                  "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 540,
-                  "charLength": 2,
+                  "charOffset": 811,
+                  "charLength": 3,
                   "snippet": {
-                    "text": "11"
+                    "text": "foo"
                   }
                 }
               }
@@ -69,23 +69,47 @@
           ]
         },
         {
-          "ruleId": "unused",
+          "ruleId": "removal",
           "kind": "fail",
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "Variable 'x' is never used"
+            "text": "'foo()' is deprecated and marked for removal"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                  "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 239,
-                  "charLength": 1,
+                  "charOffset": 727,
+                  "charLength": 3,
                   "snippet": {
-                    "text": "x"
+                    "text": "foo"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EmptyMethod",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The method is empty"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/Main.java"
+                },
+                "contextRegion": {
+                  "charOffset": 811,
+                  "charLength": 3,
+                  "snippet": {
+                    "text": "foo"
                   }
                 }
               }
@@ -103,37 +127,13 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
+                  "uri": "src/Main.java"
                 },
                 "contextRegion": {
-                  "charOffset": 397,
+                  "charOffset": 356,
                   "charLength": 6,
                   "snippet": {
                     "text": "printf"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "UnusedAssignment",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The value '2' assigned to 'x' is never used"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///Users/yopox/IdeaProjects/sarif_test/src/Main.java"
-                },
-                "contextRegion": {
-                  "charOffset": 254,
-                  "charLength": 1,
-                  "snippet": {
-                    "text": "x"
                   }
                 }
               }
