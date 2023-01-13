@@ -2,7 +2,7 @@ name: "Upload SARIF"
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   Upload-SARIF:
