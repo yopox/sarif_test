@@ -62,10 +62,10 @@
                   "uri": "src/Main.java"
                 },
                 "region": {
-                  "startLine": 7,
-                  "startColumn": 29,
-                  "endLine": 7,
-                  "endColumn": 31,
+                  "startLine": 8,
+                  "startColumn": 30,
+                  "endLine": 8,
+                  "endColumn": 32,
                   "charOffset": 343,
                   "charLength": 2,
                   "snippet": {
@@ -90,10 +90,10 @@
                   "uri": "src/Main.java"
                 },
                 "region": {
-                  "startLine": 20,
-                  "startColumn": 23,
-                  "endLine": 20,
-                  "endColumn": 26,
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 27,
                   "charOffset": 656,
                   "charLength": 3,
                   "snippet": {
@@ -118,10 +118,10 @@
                   "uri": "src/Main.java"
                 },
                 "region": {
-                  "startLine": 14,
-                  "startColumn": 12,
-                  "endLine": 14,
-                  "endColumn": 15,
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 16,
                   "charOffset": 572,
                   "charLength": 3,
                   "snippet": {
@@ -146,10 +146,10 @@
                   "uri": "src/Main.java"
                 },
                 "region": {
-                  "startLine": 20,
-                  "startColumn": 23,
-                  "endLine": 20,
-                  "endColumn": 26,
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 27,
                   "charOffset": 656,
                   "charLength": 3,
                   "snippet": {
@@ -174,10 +174,10 @@
                   "uri": "src/Main.java"
                 },
                 "region": {
-                  "startLine": 4,
-                  "startColumn": 19,
-                  "endLine": 4,
-                  "endColumn": 25,
+                  "startLine": 5,
+                  "startColumn": 20,
+                  "endLine": 5,
+                  "endColumn": 26,
                   "charOffset": 200,
                   "charLength": 6,
                   "snippet": {
