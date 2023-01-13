@@ -61,7 +61,7 @@
                 "artifactLocation": {
                   "uri": "src/Main.java"
                 },
-                "contextRegion": {
+                "region": {
                   "startLine": 7,
                   "startColumn": 29,
                   "endLine": 7,
@@ -89,7 +89,7 @@
                 "artifactLocation": {
                   "uri": "src/Main.java"
                 },
-                "contextRegion": {
+                "region": {
                   "startLine": 20,
                   "startColumn": 23,
                   "endLine": 20,
@@ -117,7 +117,7 @@
                 "artifactLocation": {
                   "uri": "src/Main.java"
                 },
-                "contextRegion": {
+                "region": {
                   "startLine": 14,
                   "startColumn": 12,
                   "endLine": 14,
@@ -145,7 +145,7 @@
                 "artifactLocation": {
                   "uri": "src/Main.java"
                 },
-                "contextRegion": {
+                "region": {
                   "startLine": 20,
                   "startColumn": 23,
                   "endLine": 20,
@@ -173,7 +173,7 @@
                 "artifactLocation": {
                   "uri": "src/Main.java"
                 },
-                "contextRegion": {
+                "region": {
                   "startLine": 4,
                   "startColumn": 19,
                   "endLine": 4,
