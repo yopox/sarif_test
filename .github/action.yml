@@ -1,0 +1,5 @@
+name: Upload SARIF
+
+runs:
+  - name: Uploading SARIF
+    uses: github/codeql-action/upload-sarif@v2
